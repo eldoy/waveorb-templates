@@ -1,0 +1,25 @@
+{
+  "name": "waveorb-template",
+  "version": "0.1.0",
+  "description": "Waveorb template",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/waveorb-templates"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dugg": "^0.1.7",
+    "mongowave": "0.0.1",
+    "stripe": "^8.18.0",
+    "wcrypt": "0.0.3",
+    "wmail": "0.6.2"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}
