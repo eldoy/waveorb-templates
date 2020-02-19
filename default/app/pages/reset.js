@@ -2,12 +2,11 @@ module.exports = async function($) {
   $.page.title = $.t('pages.reset.title')
 
   async function handleReset() {
-    var m = location.search.match(/\?key=([a-z0-9-]{36})/)
-    if (!m) {
+    var key = params('key')
+    if (!key) {
       cookie('flash', $.t('pages.reset.error_msg'))
       location = $.link('forgot')
     } else {
-      key = m[1]
       var result = await api.action('resetPassword', { data: { key } })
       if (result.error) {
         cookie('flash', result.error.message)

@@ -22,7 +22,7 @@ module.exports = async function($) {
   }
 
   async function initPayment() {
-    var _id = location.search.split('=')[1]
+    var _id = params('_id')
     site = await api.action('getSite', { data: { _id } })
     var style = {
       base: {

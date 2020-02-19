@@ -1,5 +1,6 @@
 module.exports = async function($) {
   $.page.title = $.t('pages.privacy.title')
+
   return /* html */`
     <style>
       .basically {
