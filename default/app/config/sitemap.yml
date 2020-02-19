@@ -1,0 +1,62 @@
+hostname: https://example.com
+urls:
+  - url: /
+    changefreq: always
+    priority: 1.0
+    links:
+      - url: /no/
+        lang: no
+  - url: /about.html
+    changefreq: weekly
+    priority: 0.5
+    links:
+      - url: /no/om-oss.html
+        lang: no
+  - url: /terms.html
+    changefreq: weekly
+    priority: 0.5
+    links:
+      - url: /no/betingelser.html
+        lang: no
+  - url: /privacy.html
+    changefreq: weekly
+    priority: 0.5
+    links:
+      - url: /no/personvern.html
+        lang: no
+  - url: /contact.html
+    changefreq: weekly
+    priority: 0.5
+    links:
+      - url: /no/kontakt.html
+        lang: no
+  - url: /upload.html
+    changefreq: weekly
+    priority: 0.5
+    links:
+      - url: /no/opplasting.html
+        lang: no
+  - url: /login.html
+    changefreq: weekly
+    priority: 0.5
+    links:
+      - url: /no/logginn.html
+        lang: no
+  - url: /signup.html
+    changefreq: weekly
+    priority: 0.5
+    links:
+      - url: /no/nykonto.html
+        lang: no
+  - url: /forgot.html
+    changefreq: weekly
+    priority: 0.5
+    links:
+      - url: /no/glemt.html
+        lang: no
+  - url: /reset.html
+    changefreq: weekly
+    priority: 0.5
+    links:
+      - url: /no/resett.html
+        lang: no
