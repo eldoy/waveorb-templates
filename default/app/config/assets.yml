@@ -4,4 +4,4 @@ bundle:
     - /js/waveorb-min.js
     - /js/app.js
   css:
-    - /css/app.css
+    - /css/build/app.css

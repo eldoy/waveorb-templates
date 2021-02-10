@@ -1,12 +1,15 @@
 module.exports = async function($) {
-  $.page.title = $.t('pages.about.title')
+  $.page.title = 'About'
 
   return /* html */`
-    <h1>${ $.t('pages.about.header') }</h1>
-    <p>${ $.t('pages.about.intro') }</p>
+    <h1>About</h1>
     <p>
-      ${ $.t('pages.about.read_more') }
-      <a href="https://waveorb.com/about.html">${ $.t('pages.about.link_text') }</a>
+      Waveorb is everything you need to develop fast, future proof, advanced applications.
+    </p>
+    <p>
+      <a href="https://waveorb.com/about.html">
+        Read more about Waveorb here.
+      </a>
     </p>
   `
 }

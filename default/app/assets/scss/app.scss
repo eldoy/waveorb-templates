@@ -1,0 +1,28 @@
+@import '../../../node_modules/vcss.css/scss/vcss.scss';
+
+body > header {
+  text-align: center;
+  padding: 1rem 0;
+  margin: 0;
+  nav a {
+    margin: 0 0.5rem;
+  }
+}
+
+main {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+#flash {
+  text-align: center;
+  padding: 0.5rem;
+  background: #ffc;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  &:empty {
+    display: none;
+  }
+}
