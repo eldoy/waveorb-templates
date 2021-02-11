@@ -6,6 +6,9 @@ body > header {
   margin: 0;
   nav a {
     margin: 0 0.5rem;
+    &.active {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -17,7 +20,7 @@ main {
 #flash {
   text-align: center;
   padding: 0.5rem;
-  background: #ffc;
+  background: $highlight;
   position: fixed;
   bottom: 0;
   left: 0;
