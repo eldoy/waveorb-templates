@@ -3,6 +3,9 @@ module.exports = async function($) {
 
   return /* html */`
     <style>
+      main {
+        text-align: center;
+      }
       img.waveorb-logo {
         max-height: 174px;
       }

@@ -6,15 +6,16 @@ body > header {
   margin: 0;
   nav a {
     margin: 0 0.5rem;
-    &.active {
-      text-decoration: underline;
-    }
   }
 }
 
+a.active {
+  text-decoration: underline;
+}
+
 main {
-  text-align: center;
   padding: 2rem 0;
+  max-width: 600px;
 }
 
 #flash {
@@ -25,7 +26,23 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
+  &:first-letter {
+    text-transform: uppercase;
+  }
   &:empty {
     display: none;
   }
+}
+
+.title {
+  display: flex;
+  align-items: baseline;
+  h1 {
+    flex-grow: 1;
+  }
+}
+
+li a,
+form p button ~ a {
+  margin-left: 0.25rem;
 }
