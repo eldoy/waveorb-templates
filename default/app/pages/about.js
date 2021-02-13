@@ -2,6 +2,11 @@ module.exports = async function($) {
   $.page.title = 'About'
 
   return /* html */`
+    <style>
+      main {
+        text-align: center;
+      }
+    </style>
     <h1>About</h1>
     <p>
       Waveorb is everything you need to develop fast, future proof, advanced applications.
