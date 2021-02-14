@@ -9,7 +9,7 @@ module.exports = async function($) {
     </style>
     <h1>About</h1>
     <p>
-      Waveorb is everything you need to develop fast, future proof, advanced applications.
+      Waveorb is everything you need to develop fast and future proof applications.
     </p>
     <p>
       <a href="https://waveorb.com/about.html">
