@@ -30,18 +30,16 @@ function clearErrors(field) {
 function showErrors(result, options = {}) {
   if (!result.error) return
   options = Object.assign({ class: 'error' }, options)
-  qa('.hq-errors', function(el) { text(el, '') })
+  qa('form em', function(el) { text(el, '') })
   flash(result.error.message, options)
   for (var key in result) {
     if (key !== 'error') {
       for (var field in result[key]) {
-        var el = q(`.${field}-errors`)
-        if (el) {
-          text(el, result[key][field][0])
-        }
+        text(`.${field}-errors`, result[key][field][0])
       }
     }
   }
+  return true
 }
 
 async function cache(name, id) {

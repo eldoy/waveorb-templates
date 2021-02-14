@@ -766,6 +766,7 @@ td {
   vertical-align: inherit;
   border: 0; }
 
+form button ~ a,
 nav a {
   margin-left: 0.25rem; }
 
@@ -780,7 +781,8 @@ a.active {
   text-decoration: underline; }
 
 main {
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  max-width: 600px; }
 
 #flash {
   text-align: center;
@@ -798,5 +800,5 @@ main {
 .title {
   display: flex;
   align-items: baseline; }
-  .title:first-child {
+  .title :first-child {
     flex-grow: 1; }
