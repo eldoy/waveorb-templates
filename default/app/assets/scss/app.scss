@@ -40,7 +40,7 @@ main {
 .title {
   display: flex;
   align-items: baseline;
-  &:first-child {
+  :first-child {
     flex-grow: 1;
   }
 }
