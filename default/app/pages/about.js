@@ -13,7 +13,7 @@ module.exports = async function($) {
     </p>
     <p>
       <a href="https://waveorb.com/about.html">
-        Read more about Waveorb here.
+        Read more about Waveorb here
       </a>
     </p>
   `
