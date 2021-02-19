@@ -19,11 +19,11 @@
   "license": "ISC",
   "dependencies": {
     "vcss.css": "^0.2.16",
-    "waveorb": "^0.11.3"
+    "waveorb": "^0.11.5",
+    "node-sass": "^5.0.0"
   },
   "devDependencies": {
     "concurrently": "^5.3.0",
-    "jest": "^26.6.3",
-    "node-sass": "^5.0.0"
+    "jest": "^26.6.3"
   }
 }
