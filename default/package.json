@@ -9,7 +9,8 @@
     "watch:app": "WAVEORB_PORT=5000 WAVEORB_API=http://localhost:5000 nodemon -e js,mjs,json,yml,css -i dist -x waveorb serve",
     "watch:css": "node-sass -w -q app/assets/scss/app.scss -o app/assets/css/build/",
     "build:css": "node-sass -q app/assets/scss/app.scss -o app/assets/css/build/",
-    "clear:css": "rm -rf app/assets/css/build"
+    "clear:css": "rm -rf app/assets/css/build",
+    "build": "npm run clear:css && npm run build:css && waveorb build"
   },
   "repository": {
     "type": "git",
