@@ -11,6 +11,7 @@
     "clear:css": "rm -rf app/assets/css/build",
     "build": "npm run clear:css && npm run build:css && waveorb build",
     "test": "jest --watch",
+    "migrate": "waveorb migrate",
     "deploy": "waveorb deploy",
     "serve": "waveorb serve"
   },
