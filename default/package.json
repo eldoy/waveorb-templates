@@ -4,13 +4,15 @@
   "description": "Waveorb template",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch",
-    "serve": "npm run clear:css && npm run build:css && concurrently -n 🔥,💗 \"npm run watch:app\" \"npm run watch:css\"",
-    "watch:app": "WAVEORB_PORT=5000 WAVEORB_API=http://localhost:5000 nodemon -e js,mjs,json,yml,css -i dist -x waveorb serve",
+    "dev": "npm run clear:css && npm run build:css && concurrently -n 🔥,💗 \"npm run watch:app\" \"npm run watch:css\"",
+    "watch:app": "nodemon -e js,mjs,json,yml,css -i dist -x waveorb serve",
     "watch:css": "node-sass -w -q app/assets/scss/app.scss -o app/assets/css/build/",
     "build:css": "node-sass -q app/assets/scss/app.scss -o app/assets/css/build/",
     "clear:css": "rm -rf app/assets/css/build",
-    "build": "npm run clear:css && npm run build:css && waveorb build"
+    "build": "npm run clear:css && npm run build:css && waveorb build",
+    "test": "jest --watch",
+    "deploy": "waveorb deploy",
+    "serve": "waveorb serve"
   },
   "repository": {
     "type": "git",
@@ -19,12 +21,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vcss.css": "^0.2.16",
     "waveorb": "^0.11.5",
+    "vcss.css": "^0.2.16",
     "node-sass": "^5.0.0"
   },
   "devDependencies": {
-    "concurrently": "^5.3.0",
-    "jest": "^26.6.3"
+    "jest": "^26.6.3",
+    "concurrently": "^5.3.0"
   }
 }
