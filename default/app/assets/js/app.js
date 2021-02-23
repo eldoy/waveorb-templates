@@ -79,7 +79,7 @@ function isImage(name) {
 }
 
 function closeWindow(e) {
-  if (e.code === 'Escape') {
+  if (e.code == 'Escape') {
     goBack()
   }
 }

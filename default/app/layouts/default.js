@@ -15,7 +15,7 @@ module.exports = async function($) {
         ${$.script('/bundle.js')}
         ${$.style('/bundle.css')}
         <script>window.api = waveorb('${host}')</script>
-        ${process.env.NODE_ENV === 'development' ? $.script('/js/dev.js') : ''}
+        ${process.env.NODE_ENV == 'development' ? $.script('/js/dev.js') : ''}
       </head>
       <body>
         <header>
