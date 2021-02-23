@@ -22,7 +22,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "waveorb": "^0.13.0",
+    "waveorb": "^0.13.3",
     "vcss.css": "^0.2.16",
     "node-sass": "^5.0.0"
   },
