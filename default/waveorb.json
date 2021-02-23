@@ -1,5 +1,4 @@
 {
-  "domains": [],
-  "proxy": "http://localhost:5000",
-  "server": ""
+  "domains": "example.com",
+  "proxy": "http://localhost:5000"
 }
