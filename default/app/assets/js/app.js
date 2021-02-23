@@ -13,8 +13,8 @@ async function load(path, into) {
   return res
 }
 
-async function sleep(time) {
-  return new Promise(r => setTimeout(r, 500))
+function sleep(time, s = 0.5) {
+  return new Promise(r => setTimeout(r, s*1000))
 }
 
 function clearErrors(field) {
