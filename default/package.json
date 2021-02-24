@@ -6,12 +6,13 @@
   "scripts": {
     "dev": "npm run clear:css && npm run build:css && concurrently -n 🔥,💗 \"npm run watch:app\" \"npm run watch:css\"",
     "watch:app": "nodemon -e js,mjs,json,yml,css -i dist -x waveorb serve",
-    "watch:css": "node-sass -w -q app/assets/scss/app.scss -o app/assets/css/build/",
-    "build:css": "node-sass -q app/assets/scss/app.scss -o app/assets/css/build/",
+    "watch:css": "sass --watch --no-source-map app/assets/scss/app.scss app/assets/css/build/app.css",
+    "build:css": "sass --no-source-map app/assets/scss/app.scss app/assets/css/build/app.css",
     "clear:css": "rm -rf app/assets/css/build",
     "build": "npm run clear:css && npm run build:css && waveorb build",
     "test": "jest --watch",
     "migrate": "waveorb migrate",
+    "update": "waveorb update",
     "deploy": "waveorb deploy",
     "serve": "waveorb serve"
   },
@@ -22,12 +23,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "waveorb": "^0.13.4",
+    "sass": "^1.32.8",
     "vcss.css": "^0.2.16",
-    "node-sass": "^5.0.0"
+    "waveorb": "^0.13.5"
   },
   "devDependencies": {
-    "jest": "^26.6.3",
-    "concurrently": "^6.0.0"
+    "concurrently": "^6.0.0",
+    "jest": "^26.6.3"
   }
 }
