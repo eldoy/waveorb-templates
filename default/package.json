@@ -24,7 +24,6 @@
   "license": "ISC",
   "dependencies": {
     "sass": "^1.32.8",
-    "vcss.css": "^0.2.16",
     "waveorb": "^0.13.5"
   },
   "devDependencies": {
