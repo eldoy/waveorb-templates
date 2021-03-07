@@ -1,7 +1,7 @@
 module.exports = async function($) {
   const host = process.env.NODE_ENV == 'production'
-  ? 'https://waveorb.com/api'
-  : 'http://localhost:5000'
+    ? 'https://waveorb.com/api'
+    : 'http://localhost:5000'
 
   return /* html */`
     <!doctype html>
