@@ -14,6 +14,8 @@
     "test": "jest --watch",
     "generate": "waveorb generate",
     "migrate": "waveorb migrate",
+    "sitemap": "waveorb sitemap",
+    "ping": "waveorb ping",
     "update": "waveorb update",
     "deploy": "waveorb deploy",
     "serve": "waveorb serve"
