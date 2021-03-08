@@ -11,13 +11,16 @@ The documentation for Waveorb is [found here.](https://waveorb.com/docs.html)
 # Install waveorb
 npm i -g waveorb
 
-# Create app, here called 'hello'
+# Create an app, here called 'hello'
 waveorb create hello
 
-# Change to 'hello' dir
+# Go to your new app
 cd hello
 
-# Run waveorb development server
+# Install nodemon
+npm i -g nodemon
+
+# Start the development server
 npm run dev
 ```
 
