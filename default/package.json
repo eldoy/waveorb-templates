@@ -26,11 +26,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sass": "^1.34.0",
-    "waveorb": "^0.15.1"
+    "sass": "^1.38.2",
+    "waveorb": "^0.15.4"
   },
   "devDependencies": {
-    "concurrently": "^6.2.0",
-    "jest": "^27.0.1"
+    "concurrently": "^6.2.1",
+    "jest": "^27.1.0"
   }
 }
