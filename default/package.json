@@ -26,8 +26,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sass": "^1.38.2",
-    "waveorb": "^0.15.4"
+    "sass": "^1.39.0",
+    "waveorb": "^0.15.6"
   },
   "devDependencies": {
     "concurrently": "^6.2.1",
