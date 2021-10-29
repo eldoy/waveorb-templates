@@ -12,7 +12,7 @@ module.exports = async function($) {
       Waveorb is everything you need to develop fast and future proof applications.
     </p>
     <p>
-      <a href="https://waveorb.com/about.html">
+      <a href="https://waveorb.com/about">
         Read more about Waveorb here
       </a>
     </p>
