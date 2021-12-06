@@ -27,7 +27,7 @@
   "license": "ISC",
   "dependencies": {
     "sass": "^1.44.0",
-    "waveorb": "^0.20.6"
+    "waveorb": "^0.22.0"
   },
   "devDependencies": {
     "concurrently": "^6.4.0",
