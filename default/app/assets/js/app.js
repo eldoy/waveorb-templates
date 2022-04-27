@@ -42,20 +42,6 @@ function showErrors(result, options = {}) {
   return true
 }
 
-async function cache(name, id) {
-  var doc = store(`${name}-cache`)
-  async function get() {
-    doc = await api({ action: `v1/${name}/get`, query: { id } })
-    store(`${name}-cache`, doc)
-  }
-  if (!doc || doc.id != id) {
-    await get()
-  } else {
-    setTimeout(get)
-  }
-  return doc
-}
-
 function goBack() {
   history.go(-(store('root') || 1))
 }
@@ -86,27 +72,6 @@ function closeWindow(e) {
 
 function tr(str = '', size = 32) {
   return str.length > size ? str.substring(0, size).trim() + ' ...' : str
-}
-
-async function handleEditorUpload(event, config) {
-  if (!config) config = { resize: [1220, 'auto'] }
-  var attachment = event.attachment
-  if (!attachment || !attachment.file) return
-  var result = await api({ action: 'v1/upload/create', config }, { files: [attachment.file] })
-  if (result.error) {
-    return flash(result.error.message, { scroll: false, class: 'error' })
-  }
-  if (!result || !result.length) return
-  var url = result[0].url
-  var href = url + '?content-disposition=attachment'
-  attachment.setAttributes({ url, href })
-}
-
-function loadEditorContent(html) {
-  q('trix-editor').editor.insertHTML(html)
-  document.body.tabIndex = -1
-  document.body.focus()
-  window.scrollTo(0, 0)
 }
 
 function toggleVisibility(options = {}, fn) {
