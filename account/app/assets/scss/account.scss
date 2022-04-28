@@ -1,0 +1,36 @@
+section.account-section {
+  h4 {
+    padding: 0.3rem 0.5rem;
+    background-color: #f5f5ff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    .text {
+      flex-grow: 1;
+    }
+  }
+  .account-switch {
+    padding: 0.3rem 0.5rem;
+  }
+}
+
+span.chevron {
+  display: inline-block;
+  border-bottom: 5px solid #000;
+  border-right: 5px solid #000;
+  border-radius: 2px;
+  height: 12px;
+  width: 12px;
+  transform: rotate(-135deg) translateY(-1px) translateX(-3px);
+}
+
+section.account-section.hidden {
+  .account-switch {
+    display: none;
+  }
+  span.chevron {
+    transform: rotate(45deg) translateY(-2px);
+  }
+}

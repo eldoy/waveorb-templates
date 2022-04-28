@@ -1,0 +1,15 @@
+.spinner:empty {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+    height: 100px;
+    background-image: url('/img/spinner.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

@@ -1,0 +1,33 @@
+form button ~ a,
+nav a,
+nav button {
+  margin-left: 0.5rem;
+  &.first {
+    margin-left: 0;
+  }
+}
+
+form em {
+  background: $highlight;
+  color: $text;
+  padding: 3px 6px;
+  border: 1px solid #ff1;
+  margin-top: 2px;
+  border-radius: 4px;
+  font-size: 95%;
+  &:empty {
+    display: none;
+  }
+}
+
+form small {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: $label-color;
+}
+
+form .buttons {
+  a, button {
+    margin-right: 0.5rem;
+  }
+}

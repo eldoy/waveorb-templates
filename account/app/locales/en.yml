@@ -1,0 +1,84 @@
+# LAYOUTS
+layouts:
+  description: Days In a Row Motivation App
+  title: Days In a Row
+  nav:
+    menu: Menu
+    close: Close
+    search: Search
+    about: About
+    terms: Terms
+    privacy: Privacy
+    contact: Contact
+    signup: Signup
+    login: Login
+    profile: Profile
+    logout: Logout
+  logout: You have been logged out
+
+login:
+  title: Login
+  form:
+    email: Email
+    password: Password
+    button: Log in
+  no_account: Don't have an account yet?
+  signup: Go to signup
+  forgot: Forgot your password?
+  welcome: Welcome to 7i
+  required: Please log in to continue
+
+reset:
+  title: Reset password
+  header: Reset password
+  verify: Please wait, verifying key...
+  password: New Password
+  update: Update
+  error: Key not valid, please try again
+  confirmation: Your password has been updated
+
+account:
+  title: Account
+  header: Account
+  update: Update Name &amp; Email
+  update_profile: Update profile
+  address: Address
+  email: Email
+  header_update: Update password
+  current_password: Current password
+  new_password: New password
+  save: Save
+  delete_account: Delete account
+  warning: 'Warning: This can not be undone'
+  saved: Account saved
+  confirm: Are you sure? This can not be undone.
+  confirmation: Your account was deleted
+
+signup:
+  title: Signup
+  form:
+    name: Name
+    email: Email
+    password: Password
+    button: Sign up
+  login: Go to login
+  account: Already have an account?
+  confirmation: Welcome to 7i
+
+forgot:
+  title: Forgot password
+  email: Email
+  submit: Submit
+  back: Back to login
+  confirmation: Please check your email
+
+button:
+  save: Save
+  cancel: Cancel
+  delete: Delete
+  edit: Edit
+  submit: Submit
+  select: Select
+  search: Search
+  contribute: Contribute now
+  payment: Go to payment

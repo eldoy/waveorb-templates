@@ -1,0 +1,97 @@
+.blokk-controls {
+  float: right;
+  a {
+    margin-right: 0.5rem;
+  }
+}
+
+.blokk-avatar {
+  display: inline-block;
+  img, span {
+    text-align: center;
+    background: #cbfde4;
+    color: $text;
+    font-weight: 600;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 0.5rem;
+    border: 1px solid #efefef;
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    white-space: nowrap;
+
+    &.big {
+      width: 80px;
+      height: 80px;
+      min-width: 80px;
+      min-height: 80px;
+      line-height: 80px;
+      font-size: 200%;
+    }
+
+    &.medium {
+      min-width: 50px;
+      min-height: 50px;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 120%;
+    }
+
+    &.small {
+      width: 20px;
+      height: 20px;
+      min-width: 20px;
+      min-height: 20px;
+      line-height: 20px;
+    }
+  }
+}
+
+.blokk-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  li {
+    padding: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    &:nth-child(odd) {
+      background-color: #f5f5ff;
+    }
+    &:hover {
+      background-color: #ffffcc;
+    }
+    border-bottom: 1px solid #dfdfdf;
+    &:last-child {
+      border-bottom: none;
+    }
+    a {
+      text-decoration: none !important;
+      flex-grow: 1;
+      padding: 0.25rem 0;
+    }
+  }
+}
+
+.blokk-details {
+  margin: 1.5rem 0;
+  dl {
+    display: flex;
+    flex-direction: column;
+    background: #fafafa;
+    padding: 0.5rem;
+    dt, dd {
+      margin: 0;
+    }
+    dd {
+      margin-bottom: 1rem;
+    }
+  }
+}

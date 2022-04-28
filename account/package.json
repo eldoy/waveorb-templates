@@ -1,0 +1,43 @@
+{
+  "name": "waveorb-templates",
+  "version": "0.1.0",
+  "description": "Waveorb templates",
+  "scripts": {
+    "dev": "npm run clear:css && npm run build:css && concurrently -n 🔥,💗 \"npm run watch:app\" \"npm run watch:css\"",
+    "watch:app": "nodemon -e js,mjs,json,yml,css,md -i dist -x waveorb serve",
+    "watch:css": "sass --watch app/assets/scss/app.scss app/assets/css/build/app.css",
+    "build:css": "sass app/assets/scss/app.scss app/assets/css/build/app.css",
+    "build:css:min": "sass --style compressed --no-source-map app/assets/scss/app.scss app/assets/css/build/app.css",
+    "clear:css": "rm -rf app/assets/css/build",
+    "build": "npm run clear:css && npm run build:css:min && waveorb build",
+    "test": "jest --watch",
+    "generate": "waveorb generate",
+    "migrate": "waveorb migrate",
+    "sitemap": "waveorb sitemap",
+    "ping": "waveorb ping",
+    "update": "waveorb update",
+    "deploy": "waveorb deploy",
+    "serve": "waveorb serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eldoy/waveorb-templates"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dugg": "^0.1.11",
+    "escape-html": "^1.0.3",
+    "lodash": "^4.17.21",
+    "lowtide": "^0.1.5",
+    "mongowave": "^0.2.6",
+    "sass": "^1.51.0",
+    "shortn": "^0.1.0",
+    "waveorb": "^0.30.5",
+    "waveorb-mailer": "^0.1.3"
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0",
+    "jest": "^28.0.2"
+  }
+}
