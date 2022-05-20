@@ -31,13 +31,13 @@
     "lodash": "^4.17.21",
     "lowtide": "^0.1.5",
     "mongowave": "^0.2.6",
-    "sass": "^1.51.0",
+    "sass": "^1.52.0",
     "shortn": "^0.1.0",
-    "waveorb": "^0.30.6",
+    "waveorb": "^0.30.11",
     "waveorb-mailer": "^0.1.3"
   },
   "devDependencies": {
-    "concurrently": "^7.1.0",
-    "jest": "^28.0.3"
+    "concurrently": "^7.2.0",
+    "jest": "^28.1.0"
   }
 }
