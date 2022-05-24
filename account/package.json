@@ -33,7 +33,7 @@
     "mongowave": "^0.2.6",
     "sass": "^1.52.1",
     "shortn": "^0.1.0",
-    "waveorb": "^0.30.12",
+    "waveorb": "^0.30.13",
     "waveorb-mailer": "^0.1.3"
   },
   "devDependencies": {
