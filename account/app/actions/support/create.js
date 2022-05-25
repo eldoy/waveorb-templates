@@ -22,7 +22,7 @@ module.exports = async function($) {
     $.mailer.send('support-mail', $, {
       subject,
       to: email,
-      from: 'DaysInARow <hello@daysinarow.no>'
+      from: $.app.config.env.email
     },
     { content })
   }

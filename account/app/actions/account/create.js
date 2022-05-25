@@ -50,7 +50,7 @@ module.exports = async function($) {
   if (process.env.NODE_ENV != 'test') {
     $.mailer.send('signup-mail', $, {
       to: email,
-      from: 'DaysInARow <hello@daysinarow.no>'
+      from: $.app.config.env.email
     })
   }
   return await $.db('account').create({

@@ -29,7 +29,7 @@ module.exports = async function($) {
 
   if (process.env.NODE_ENV != 'test') {
     $.mailer.send('reset-mail', $,
-      { to: email, from: 'DaysInARow <hello@daysinarow.no>' },
+      { to: email, from: $.app.config.env.email },
       { key }
     )
   }
