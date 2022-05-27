@@ -12,7 +12,7 @@ module.exports = async function($) {
       id: {
         required: true,
         is: 'id',
-        exits: 'account',
+        exist: 'account',
         matcher: async function(id, $) {
           if (id != $.account.id) {
             return 'id does not match current login'
