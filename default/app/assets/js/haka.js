@@ -129,8 +129,11 @@ window.attr = function (selector, atts, value) {
 window.time = function (date, opt) {
   if (!date) return ''
   if (typeof date == 'string') date = new Date(date)
+  if (typeof opt == 'string') opt = { lang: opt }
   if (!opt) opt = {}
-  var formatter = new Intl.DateTimeFormat(opt.lang || 'en', opt)
+  var lang = opt.lang || 'en'
+  delete opt.lang
+  var formatter = new Intl.DateTimeFormat(lang, opt)
 
   var format = opt.format
   if (format) {
@@ -153,6 +156,15 @@ window.time = function (date, opt) {
     return format
   }
   return formatter.format(date)
+}
+
+window.num = function (n, opt) {
+  if (typeof n == 'string') n = parseFloat(n.replace(/_/g, ''))
+  if (typeof opt == 'string') opt = { lang: opt }
+  if (!opt) opt = {}
+  var lang = opt.lang || 'en'
+  delete opt.lang
+  return new Intl.NumberFormat(lang, opt).format(n)
 }
 
 window.params = function (id) {
